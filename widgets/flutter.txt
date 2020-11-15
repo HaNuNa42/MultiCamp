@@ -1,0 +1,7 @@
+////////Future ve Stream kavramlari biraz derin kavramlar. Ozetle, Future tek bir data getirisi varsa o anda kullanilir, Stream ise bir data kisi varsa onda kullanilir. ​Stream icin StreamBuilder, future icin FutureBuilder
+
+///////Bir Widget'a tiklama ozelligi eklemek icin kullanilan widgetlardan birisi o. InkWell Material designdan gelen Ripple effect dedigimiz, dalgalanma etkisi veriyor tiklaninca
+
+///////Yazim diline gore, ListTile'da trailing sonda olan demek oluyor. Takip eden anlaminda. Ingilizcede sagda, Arapca olsa solda olur gibi. Coklu dil desteklemek icin, anlamli isimler var.
+
+///////
