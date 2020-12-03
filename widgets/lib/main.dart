@@ -1,37 +1,51 @@
 import 'package:flutter/material.dart';
+import 'package:hamiltonapp/data/music_list.dart';
 
 void main() {
-  runApp(MultiCampApp());
+  runApp(MulticampApp());
 }
 
-class MultiCampApp extends StatelessWidget {
+class MulticampApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: MultiCampHamiltonApp(),
+      home: MulticampHamiltonApp(),
     );
   }
 }
 
-class MultiCampHamiltonApp extends StatelessWidget {
-  static const _size = 100.0;
+class MulticampHamiltonApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final musicList = MusicList.generateList();
     return Scaffold(
       appBar: AppBar(
-        title: Text("Hamilton App"),
+        title: Text('Hamilton App'),
       ),
-      body: ListView.builder(
-          itemCount: musicList.lenght,
-          itemBuilder: (_, int index) {
-            final musicItem = musicList[index];
-            return ListTile(
-                title: Text(musicList.title),
-                subtitle: Text(musicList.item),
-                leading: Image.network(musicList.imageUrl),
-                trailing: Icon(Icons.play_arrow));
-          }),
+      body: GridView.builder(
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2,
+        ),
+        itemCount: musicList.length,
+        itemBuilder: (_, int index) {
+          final musicItem = musicList[index];
+          return Container(
+            margin: const EdgeInsets.all(8),
+            child: Card(
+              child: Column(
+                children: [
+                  Expanded(child: Image.network(musicItem.imageUrl)),
+                  Text(musicItem.title),
+                  Text(
+                    musicItem.artist,
+                    textAlign: TextAlign.center,
+                  ),
+                ],
+              ),
+            ),
+          );
+        },
+      ),
     );
   }
 }

@@ -1,16 +1,12 @@
-# multicamp_flutter
+# Hamilton App
 
-A new Flutter project.
+This repo contains an application that displays Hamilton's playlist information.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+![image](https://user-images.githubusercontent.com/5441882/100285047-3ae05880-2f81-11eb-9b46-d215a2bd1a6f.png)
 
-A few resources to get you started if this is your first Flutter project:
+![image](https://user-images.githubusercontent.com/5441882/100288475-cceb5f80-2f87-11eb-9a9a-7ab443ce3f75.png)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+![image](https://user-images.githubusercontent.com/5441882/100288507-e2608980-2f87-11eb-898f-fa1ec05740e4.png)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
